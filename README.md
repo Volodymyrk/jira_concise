@@ -4,6 +4,7 @@ CSS to override Jira's Agile view to hide all visual clutter
 
 # Installation
 1. Install Stylish
+
 <img width="212" alt="stylish_logo" src="https://cloud.githubusercontent.com/assets/5244286/17077678/a26b47ec-50d0-11e6-8406-cea260d71548.png">
 
 2. In Stylish, use search to find "Jira concise"
