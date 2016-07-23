@@ -12,6 +12,12 @@
  * specify your company's Jira address in Stylish, so that style would not be applied to other domains
  */
 
+/* 
+Next line is required by Stylish to publish a style without URL restrictions 
+Since Jira can be hosted on any internal domain, I recommend limiting the scope of style in Stylish UI
+Select "URLs starting with" and type in your Jira domain
+*/
+
 /* i really want this to be global */
 
 
@@ -20,6 +26,11 @@
   height: 32px !important;
   padding: 6px 8px !important;
   
+}
+
+/* hide Epics */
+.ghx-issue .ghx-highlighted-fields{
+  display: none;
 }
 
 /* prettyfy issue description */
@@ -83,6 +94,3 @@
   height:     44px !important;
   width:      8px !important;
 }
-
-
-
