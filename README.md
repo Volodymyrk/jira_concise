@@ -1,4 +1,4 @@
-# jira_concise
+# Jira Concise CSS stylish config
 CSS to override Jira's Agile view to hide all visual clutter
 ![jira concise](https://cloud.githubusercontent.com/assets/5244286/17077652/3ccee890-50cf-11e6-8b5f-db21ed8152ce.png)
 
