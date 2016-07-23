@@ -1,0 +1,88 @@
+/*
+ *
+ * Concise Jira Board
+ * Style that maximises information to ink ratio, by removing all unnecessary elements from the board
+ * inspired by https://gist.github.com/tobico/5538172
+ *
+ * - reduces card size to 2 lines to fit more cards on screen
+ * - removes the issue number link, because nobody cares, and makes the whole card clickable
+ * - removes the ugly icons from the left side of the card
+ * - red bar on the side of tickets with a priority of "Blocker"
+ * 
+ * specify your company's Jira address in Stylish, so that style would not be applied to other domains
+ */
+
+/* i really want this to be global */
+
+
+/* smaller card, so more can fit on the screen */
+.ghx-issue {
+  height: 32px !important;
+  padding: 6px 8px !important;
+  
+}
+
+/* prettyfy issue description */
+.ghx-issue-fields .ghx-summary{
+  position: relative;
+  left: -40px;
+  top:  -15px;
+}
+.ghx-issue-fields .ghx-summary .ghx-inner {
+  line-height: 1.35em !important;
+  height:      2.75em !important;
+
+}
+
+
+/* Hide Issue number */
+.ghx-issue-fields .ghx-key {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto !important;
+  text-indent: -1000em;
+}
+ 
+/* make card clickable */
+.ghx-issue-fields .ghx-key a {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+
+/* hide issue type */
+.ghx-issue-fields .ghx-type, .ghx-sprint-support .ghx-grabber, .ghx-end {
+  display: none !important;
+}
+
+/* hide priority icon */
+.ghx-issue .ghx-priority {
+  display: none;
+}
+
+
+/*Blockers are flagged red */
+.ghx-issue .ghx-flags {
+  overflow: visible !important;
+}
+
+.ghx-issue .ghx-priority[title="Blocker"] {
+  display:    block;
+  background: #f00000;
+  position:   absolute !important;
+  left:       -21px !important;
+  top:        -29px !important;
+  height:     44px !important;
+  width:      8px !important;
+}
+
+
+
